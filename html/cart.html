@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="icon" href="../image/6819144.png" />
+    <link rel="stylesheet" href="/css/test.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+    <div class="div px-5 p-2">
+      <img src="../image/logo.png" alt="">
+      <button class="btn text-warning " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars fs-1 "></i>
+      </button>
+     
+    </div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <div class="navbar ">
+      <div class="col-md-12 logo p-5 mx-4 ">
+        <img src="../image/logo.png"alt="">
+      </div>
+      <nav class="navbar navbar-expand-lg px-5 mx-4 img-fluid">
+        <ul class="navbar-nav flex-column ">
+            <li class="nav-item d-flex row">
+                <a class="nav-link fs-5 text-black position-relative text-dark " href="../html/home.html">HOME</a>
+                <span class="span_1"></span>
+            </li>
+            <li class="nav-item d-flex row ">
+                <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/shop.html">SHOP</a>
+                <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+                <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/product.html">PRODUCT</a>
+                <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+                <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/cart.html">CART</a>
+                <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+                <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/chechout.html">CHECKOUT</a>
+                <span class=""></span>
+            </li>
+        </ul>
+    </nav>
+    <div class="bottom-discount mx-5 px-4">
+      <h5 class="p1">%Discount%</h5>
+      <h5 class="p2">New this week</h5>
+    </div>
+    <div class="icons-nav mx-5 m-4 px-3">
+      <a class="col-md-12 text-start  nav-link text-dark" href="#">
+          <i class="fa fa-shopping-cart fs-4 me-2 " aria-hidden="true"></i><span>CART</span>
+      </a>
+      <a class="col-md-12 text-start d-flex   nav-link text-dark" href="#">
+          <i class="fa fa-star fs-4 me-2 " aria-hidden="true"></i><span >FAVOURITE</span>
+      </a>
+      <a class="col-md-12 text-start  nav-link text-dark" href="#">
+          <i class="fa fa-search fs-4 me-2 " aria-hidden="true"></i>SEARCH
+      </a>
+  </div>
+  <div class="icon-contact  col-md-12 mx-5 px-3">
+    <div class="d-flex align-items-center">
+        <a class=" text-start   nav-link text-secondary opacity-0.5" href="#">
+        <i class="fa-brands fa-pinterest fs-5"></i>
+        </a>
+        <a class=" text-start nav-link text-secondary opacity-0.5" href="#">
+            <i class="fa-brands fa-instagram  fs-5 "></i>
+        </a>
+        <a class=" text-start  nav-link text-secondary opacity-0.10" href="#">
+            <i class="fa-brands fa-facebook-f fs-5 "></i>
+        </a>
+        <a class=" text-start   nav-link text-secondary opacity-0.5" href="#">
+            <i class="fa-brands fa-twitter fs-5 "></i>
+        </a></div>
+
+  </div>
+    </div>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+    <div class="dropdown mt-3">
+      
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="row m-3">
+
+      <div class="nav-bar col-3">
+         <div class="navbar ">
+          <div class="col-md-12 logo p-5 mx-4 ">
+            <img src="../image/logo.png"alt="">
+          </div>
+          <nav class="navbar navbar-expand-lg px-5 mx-4 img-fluid">
+            <ul class="navbar-nav flex-column ">
+                <li class="nav-item d-flex row">
+                    <a class="nav-link fs-5 text-black position-relative text-dark " href="../home.html">HOME</a>
+                    <span class="span_1"></span>
+                </li>
+                <li class="nav-item d-flex row ">
+                    <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/shop.html">SHOP</a>
+                    <span class=""></span>
+                </li>
+                <li class="nav-item d-flex row">
+                    <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/product.html">PRODUCT</a>
+                    <span class=""></span>
+                </li>
+                <li class="nav-item d-flex row">
+                    <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/cart.html">CART</a>
+                    <span class=""></span>
+                </li>
+                <li class="nav-item d-flex row">
+                    <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/chechout.html">CHECKOUT</a>
+                    <span class=""></span>
+                </li>
+            </ul>
+        </nav>
+        <div class="bottom-discount mx-5 px-4">
+          <h5 class="p1">%Discount%</h5>
+          <h5 class="p2">New this week</h5>
+        </div>
+        <div class="icons-nav mx-5 m-4 px-3">
+          <a class="col-md-12 text-start  nav-link text-dark" href="#">
+              <i class="fa fa-shopping-cart fs-4 me-2 " aria-hidden="true"></i><span>CART</span>
+          </a>
+          <a class="col-md-12 text-start d-flex   nav-link text-dark" href="#">
+              <i class="fa fa-star fs-4 me-2 " aria-hidden="true"></i><span >FAVOURITE</span>
+          </a>
+          <a class="col-md-12 text-start  nav-link text-dark" href="#">
+              <i class="fa fa-search fs-4 me-2 " aria-hidden="true"></i>SEARCH
+          </a>
+      </div>
+      <div class="icon-contact  col-md-12 mx-5 px-3">
+        <div class="d-flex align-items-center">
+            <a class=" text-start   nav-link text-secondary opacity-0.5" href="#">
+            <i class="fa-brands fa-pinterest fs-5"></i>
+            </a>
+            <a class=" text-start nav-link text-secondary opacity-0.5" href="#">
+                <i class="fa-brands fa-instagram  fs-5 "></i>
+            </a>
+            <a class=" text-start  nav-link text-secondary opacity-0.10" href="#">
+                <i class="fa-brands fa-facebook-f fs-5 "></i>
+            </a>
+            <a class=" text-start   nav-link text-secondary opacity-0.5" href="#">
+                <i class="fa-brands fa-twitter fs-5 "></i>
+            </a></div>
+  
+      </div>
+        </div>
+      </div>
+      <div class="shope col-9 my-5">
+        <div class="row">
+          <div class="cart-shope col-6 col-lg-7">
+            <h3 class="my-2">Shopping Cart</h3>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead style="background: #d9dfe9; width: 830px">
+                  <tr>
+                    <th class="text-center">Name</th>
+
+                    <th scope="col"></th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody class="border-top-1">
+                  <tr>
+                    <th scope="row">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../image/1.jpg"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">White Modern Chair</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500">Qty</p>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row">
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus text-secondary"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="2"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px; height: 20px"
+                        />
+
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500">$130</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../image/3.jpg"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">
+                            Homo Deus: A Brief History of Tomorrow
+                          </p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Qty</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row">
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px; height: 20px"
+                        />
+
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">$10</p>
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row" class="border-bottom-0">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../image/5.jpg"
+                          class="img-fluid rounded-3"
+                          style="width: 120px"
+                          alt="Book"
+                        />
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">Minimal Plant Pot</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">Qty</p>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <div class="d-flex flex-row">
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fas fa-minus"></i>
+                        </button>
+
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control form-control-sm"
+                          style="width: 50px; height: 20px"
+                          ;
+                        />
+
+                        <button
+                          class="btn btn-link px-2 text-secondary"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle border-bottom-0">
+                      <p class="mb-0" style="font-weight: 500">$10</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="form-const col-3 col-lg-4  my-5 py-2 m-2">
+            <div class="cart-summar w-100">
+              <h5 class="text-dark mx-3">Cart Total</h5>
+              <ul class="summary-table my-4 text-secondary">
+                <li class="my-4 text-secondary fs-5">
+                  <span>subtotal:</span>
+                  <span class="float-end mx-4">$140.00</span>
+                </li>
+                <li class="my-4 text-secondary fs-5">
+                  <span>delivery:</span>
+                  <span class="float-end mx-4">Free</span>
+                </li>
+                <li class="my-4 text-secondary fs-5 text-secondary">
+                  <span class="mx-1">total:</span>
+                  <span class="float-end mx-4">$140.00</span>
+                </li>
+              </ul>
+
+              <div class="cart-btn mt-100 py-5">
+                <a href="#" class="btn amado-btn">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- end-Contact-us -->
+    </div>
+
+    <!-- start-footer  -->
+    <div class="container-fluid mt-5">
+      <div class="row rps_footer">
+          <div class="footer row p-2" style="background-color: #3c3c3c">
+              <div class="col-md-6 ps-5">
+                  <div class="row">
+                      <div class="col-sm-12 d-flex px-5 pt-5">
+                          <h1 class="text-white">Subscribe for a <span class="text-warning">25% Discount</span> </h1>
+                          
+                      </div>
+                  </div>
+                  <p class="text-secondary ">Nulla ac convallis lorem, eget euismod nisl.
+                       Donec in libero sit ametmivulputate consectetur.
+                      Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+              </div>
+              <div class="col-md-6 ">
+                  <div class="d-flex justify-content-center pt-4">
+                      <input class="form-control w-50 py-3 rounded-0 px-3" type="email"
+                          placeholder="Your email ....">
+                      <button class="btn btn-warning rounded-0 px-3 ">Subscribe</button>
+                  </div>
+              </div>
+          </div>
+          <div class="row p-5 " style="background-color: #252525;">
+              <div class="col-md-6 text-secondary d-flex flex-column align-items-center justify-content-end">
+                  <img class="align-items-start mb-3" src="../image/logo2.png" alt="">
+                  <p class="">Copyright ©2024 All rights reserved This template is made</p>
+                  <p>with by <i class="fa-solid fa-heart text-warning"></i><a href="#" class="a_list text-secondary">
+                          Colorlib </a>
+                      & Re-distributed by <a href="#" class="a_list text-secondary">
+                          Themewagon</a></p>
+              </div>
+              <div class="col-md-6 text-white d-flex flex-row align-items-center justify-content-start ">
+                  <nav class="navbar navbar-expand-lg">
+                      <i class="fa-solid fa-bars fs-1 text-warning navbar-toggler" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      </i>
+                      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                          <ul class="chair-nav navbar-nav">
+                              <li class="nav-item me-3 fs-5">
+                                  <a class="nav-link text-warning" href="#">Home</a>
+                              </li>
+                              <li class="nav-item me-3 fs-5">
+                                  <a class="nav-link text-light" href="#">SHOP</a>
+                              </li>
+                              <li class="nav-item me-3 fs-5">
+                                  <a class="nav-link text-light" href="#">PRODUCT</a>
+                              </li>
+                              <li class="nav-item me-3 fs-5">
+                                  <a class="nav-link text-light" href="#">CART</a>
+                              </li>
+                              <li class="nav-item me-3 fs-5">
+                                  <a class="nav-link text-light" href="#">CHECKOUT</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </div>
+
+   <script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+
+function topFunction() {
+document.body.scrollTop = 20;
+document.documentElement.scrollTop = 0;
+}
+
+  </script>
+  <script src="../javascript/main.js"></script>
+  </body>
+</html>

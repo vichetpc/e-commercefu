@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shop-product</title>
+  <link rel="icon" href="../image/6819144.png" />
+
+  <link rel="stylesheet" href="/css/test.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="div px-5 p-2">
+    <img src="../image/logo.png" alt="" />
+    <button class="btn text-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">
+      <i class="fa-solid fa-bars fs-1"></i>
+    </button>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="navbar">
+        <div class="col-md-12 logo p-5 mx-4">
+          <img src="../image/logo.png" alt="" />
+        </div>
+        <nav class="navbar navbar-expand-lg px-5 mx-4 img-fluid">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/home.html">HOME</a>
+              <span class="span_1"></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/shop.html">SHOP</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/product.html">PRODUCT</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/cart.html">CART</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/chechout.html">CHECKOUT</a>
+              <span class=""></span>
+            </li>
+          </ul>
+        </nav>
+        <div class="bottom-discount mx-5 px-4">
+          <h5 class="p1">%Discount%</h5>
+          <h5 class="p2">New this week</h5>
+        </div>
+        <div class="icons-nav mx-5 m-4 px-3">
+          <a class="col-md-12 text-start nav-link text-dark" href="#">
+            <i class="fa fa-shopping-cart fs-4 me-2" aria-hidden="true"></i><span>CART</span>
+          </a>
+          <a class="col-md-12 text-start d-flex nav-link text-dark" href="#">
+            <i class="fa fa-star fs-4 me-2" aria-hidden="true"></i><span>FAVOURITE</span>
+          </a>
+          <a class="col-md-12 text-start nav-link text-dark" href="#">
+            <i class="fa fa-search fs-4 me-2" aria-hidden="true"></i>SEARCH
+          </a>
+        </div>
+        <div class="icon-contact col-md-12 mx-5 px-3">
+          <div class="d-flex align-items-center">
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-pinterest fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-instagram fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.10" href="#">
+              <i class="fa-brands fa-facebook-f fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-twitter fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="dropdown mt-3">
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="nav-bar col-lg-3 col-md-4">
+      <div class="navbar">
+        <div class="col-md-12 logo p-5 mx-4">
+          <img src="../image/logo.png" alt="" />
+        </div>
+        <nav class="navbar navbar-expand-lg px-5 mx-4 img-fluid">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../home.html">HOME</a>
+              <span class="span_1"></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/shop.html">SHOP</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/product.html">PRODUCT</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/cart.html">CART</a>
+              <span class=""></span>
+            </li>
+            <li class="nav-item d-flex row">
+              <a class="nav-link fs-5 text-black position-relative text-dark" href="../html/chechout.html">CHECKOUT</a>
+              <span class=""></span>
+            </li>
+          </ul>
+        </nav>
+        <div class="bottom-discount mx-5 px-4">
+          <h5 class="p1">%Discount%</h5>
+          <h5 class="p2">New this week</h5>
+        </div>
+        <div class="icons-nav mx-5 m-4 px-3">
+          <a class="col-md-12 text-start nav-link text-dark" href="#">
+            <i class="fa fa-shopping-cart fs-4 me-2" aria-hidden="true"></i><span>CART</span>
+          </a>
+          <a class="col-md-12 text-start d-flex nav-link text-dark" href="#">
+            <i class="fa fa-star fs-4 me-2" aria-hidden="true"></i><span>FAVOURITE</span>
+          </a>
+          <a class="col-md-12 text-start nav-link text-dark" href="#">
+            <i class="fa fa-search fs-4 me-2" aria-hidden="true"></i>SEARCH
+          </a>
+        </div>
+        <div class="icon-contact col-md-12 mx-5 px-3">
+          <div class="d-flex align-items-center">
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-pinterest fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-instagram fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.10" href="#">
+              <i class="fa-brands fa-facebook-f fs-5"></i>
+            </a>
+            <a class="text-start nav-link text-secondary opacity-0.5" href="#">
+              <i class="fa-brands fa-twitter fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-8 category-content">
+      <div class="row d-flex flex-column flex-md-row flex-column-reverse">
+        <div class="col-lg-3 col-md-5 category" style="background: #dfe3e8">
+          <p class="p-4 m-2">Catagories</p>
+          <ul class="m-2 me-5">
+            <li><a class="nav-link text-secondary" href="#">Chair</a></li>
+            <li><a class="nav-link text-secondary" href="#">Beds</a></li>
+            <li>
+              <a class="nav-link text-secondary" href="#">Accesories</a>
+            </li>
+            <li><a class="nav-link text-secondary" href="#">Funiture</a></li>
+            <li><a class="nav-link text-secondary" href="#">Home Deco</a></li>
+            <li><a class="nav-link text-secondary" href="#">Dressing</a></li>
+            <li><a class="nav-link text-secondary" href="#">Table</a></li>
+          </ul>
+          <p class="text-light mx-4 m-2 text-dark">Brands</p>
+          <ul class="">
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Chair</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Beds</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Accesories</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Furniture</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Home Deco</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Dressings</label>
+            </div>
+            <div class="custom-control custom-checkbox d-block d-flex p-0 m-0">
+              <input type="checkbox" class="form-check-input my-1" />
+              <label for="Cash from" class="ms-2">Table</label>
+            </div>
+          </ul>
+          <span class="text-dark mx-4">Color</span>
+          <div class="color justify-content-center align-items-center my-3">
+            <ul class="d-flex">
+              <li class="color1 me-2 bg-light list-group-item">
+                <a href="" class="nav-link"></a>
+              </li>
+              <li class="color1 me-2 bg-secondary list-group-item"></li>
+              <li class="color1 me-2 bg-dark list-group-item"></li>
+              <li class="color1 me-2 bg-primary list-group-item"></li>
+            </ul>
+            <ul class="d-flex">
+              <li class="color1 me-2 bg-danger list-group-item">
+                <a href="" class="nav-link"></a>
+              </li>
+              <li class="color1 me-2 bg-warning list-group-item"></li>
+              <li class="color1 me-2 color-extra list-group-item"></li>
+              <li class="color1 me-2 color-extra-two list-group-item"></li>
+            </ul>
+            <span class="text-secondary mx-4 p-2">Price</span>
+            <form class="multi-range-field w-100 text-center ms-0 ">
+              <input id="multi" class="multi-range w-75 " type="range" />
+            </form>
+            <p class="mx-4 me-5 px-3 text-secondary">$10-$1000</p>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-7 p-2">
+          <div class="row py-5">
+
+            <h6>SHOWING 1-8 0F 25</h6>
+
+            <div class="row ">
+              <div class="col-8 col-md-6 col-sm-12 col-12 mb-2">
+
+                <i class="fa fa-th-large text-light icons-larght" aria-hidden="true"></i>
+                <i class="fa-solid fa-bars text-light icons-larght" aria-hidden="true"></i>
+
+              </div>
+              <div class="sort col-2 col-md-3 col-sm-6 col-6 bg-light p-2 text-center">
+                <label for="cars" class="bg-light m-0 text-secondary">sort</label>
+                <select class="border-0 rounded-0 bg-light" id="cars" name="carlist" form="carform">
+                  <option value="volvo">New</option>
+                  <option value="saab">Date</option>
+                  <option value="opel">Pupolar</option>
+                </select>
+              </div>
+              <div class=" col-2 col-md-3 col-sm-6 col-6 bg-light text-center p-2">
+                <label for="car " class="text-secondary">View</label>
+                <select class="bg-light border-0 rounded-0" id="cars" name="carlist" form="carform">
+                  <option value="volvo">12</option>
+                  <option value="saab">24</option>
+                  <option value="opel">48</option>
+                  <option value="opel">96</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 p-2">
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/1.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/5.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/5.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/7.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/6.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/product6.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 img-fluid p-2">
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/5.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/7.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/6.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/8.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="img">
+                    <img class="img-one img-fluid w-100" src="../image/product6.jpg" alt="" />
+                    <img class="img-two img-fluid w-100" src="../image/1.jpg" alt="" />
+                  </div>
+                  <div class="item-price p-2">
+                    <div class="line my-1"></div>
+                    <p class="p-0 my-2 fs-4 text-warning">
+                      $180
+                      <span class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <h6>
+                      Modern Chair
+                      <span class="icons-shop text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row rps_footer">
+      <div class="row p-2" style="background-color: #3c3c3c">
+        <div class="col-md-6 ps-5">
+          <div class="row">
+            <div class="col-sm-12 d-flex px-5 pt-5">
+              <h1 class="text-white">
+                Subscribe for a <span class="text-warning">25% Discount</span>
+              </h1>
+            </div>
+          </div>
+          <p class="text-secondary">
+            Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit
+            ametmivulputate consectetur. Donec auctor interdum purus, ac
+            finibus massa bibendum nec.
+          </p>
+        </div>
+        <div class="col-md-6 px-5 pt-5">
+          <div class="d-flex justify-content-center pt-4">
+            <input class="form-control w-50 py-3 rounded-0 px-3" type="email" placeholder="Your email ...." />
+            <button class="btn btn-warning rounded-0 px-3">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5" style="background-color: #252525">
+        <div class="col-md-6 text-secondary d-flex flex-column align-items-center justify-content-end">
+          <img class="align-items-start mb-3" src="../image/logo2.png" alt="" />
+          <p class="">
+            Copyright ©2024 All rights reserved This template is made
+          </p>
+          <p>
+            with by <i class="fa-solid fa-heart text-warning"></i><a href="#" class="a_list text-secondary"> Colorlib
+            </a> &
+            Re-distributed by
+            <a href="#" class="a_list text-secondary"> Themewagon</a>
+          </p>
+        </div>
+        <div class="col-md-6 text-white d-flex flex-row align-items-center justify-content-start">
+          <nav class="navbar navbar-expand-lg">
+            <i class="fa-solid fa-bars fs-1 text-warning navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+            </i>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="chair-nav navbar-nav">
+                <li class="nav-item me-3 fs-5">
+                  <a class="nav-link text-warning" href="#">Home</a>
+                </li>
+                <li class="nav-item me-3 fs-5">
+                  <a class="nav-link text-light" href="#">SHOP</a>
+                </li>
+                <li class="nav-item me-3 fs-5">
+                  <a class="nav-link text-light" href="#">PRODUCT</a>
+                </li>
+                <li class="nav-item me-3 fs-5">
+                  <a class="nav-link text-light" href="#">CART</a>
+                </li>
+                <li class="nav-item me-3 fs-5">
+                  <a class="nav-link text-light" href="#">CHECKOUT</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../javascript/main.js"></script>
+  <script>
+
+    let mybutton = document.getElementById("myBtn");
+
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+  
+    function topFunction() {
+      document.body.scrollTop = 20;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script>
+</body>
+
+</html>
